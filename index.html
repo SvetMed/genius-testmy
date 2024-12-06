@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сучасна пекарня</title>
+  <link rel="stylesheet" href="/css/style.css">
  
 </head>
 <body>
@@ -15,34 +16,34 @@
       </a>
       <!-- logo-->
        <ul>
-        <li><a href="#">Наші традиції</a></li>
-        <li><a href="#">Шеф-кухарі</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+        <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a class="link" href="#format-section">Формати</a></li>
+        <li><a class="link" href="#contact-section">Контакти</a></li>
        </ul>
     </nav>
     <!-- замовити дзвінок -->
 
-    <button type="button">Замовити дзвінок</button>
+    <button type="button" class="button">Замовити дзвінок</button>
 
   </header>
 
   <main>
-    <section>
-      <h1>Сучасна пекарня</h1>
+    <section class="main-section ">
+      <h1 class="hero-title"><span class="accent">Сучасна </span>пекарня</h1>
       
     </section>
 
-    <section>
+    <section   id="traditions-section">
 
-      <ul>
+      <ul class="advantages-list">
         <li>Великий попит на ринку</li>
         <li>Доступні за бюджетом формати</li>
         <li>Досвідчена управлінська команда</li>
 
       </ul>
 
-      <h2>Новий формат традицій</h2>
+      <h2 class="section-title">Новий формат традицій</h2>
 
       <p><span> shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла смак 
         традиційної випічки та натуральність інгредієнтів.</p>
@@ -56,9 +57,8 @@
     
     </section>
 
-    <section>
-      <h2>Наші найкращі
-      шеф -кухарі</h2>
+    <section  id="chefs-section">
+      <h2 class="section-title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
 
       <ul>
         <li>
@@ -91,9 +91,9 @@
     
     </section>
 
-    <section>
+    <section  id="format-section">
 
-      <h2>Формати</h2>
+      <h2 class="section-title">Формати</h2>
 
       <ul>
         <li>
@@ -124,9 +124,19 @@
     
     </section>
 
-    <section>
-      <h2>Приєднуйся до
+    <section  id="contact-section">
+      <h2 class="section-title">Приєднуйся до
       мережі пекарень</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.179738554372!2d30.490390500000004!3d50.456377599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce6371aa0fdb%3A0x447fbee89abf1047!2z0JrRg9GF0L3RjyDQn9C-0LvQu9C4!5e0!3m2!1sru!2sdk!4v1733395616839!5m2!1sru!2sdk"
+        width="603" 
+        height="595" 
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
     
     </section>
 
@@ -144,16 +154,16 @@
         <img src="./img/logo.svg" alt="logo">
       </a>
       <ul>
-        <li><a href="#">Наші традиції</a></li>
-        <li><a href="#">Шеф-кухарі</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+        <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a class="link" href="#format-section">Формати</a></li>
+        <li><a class="link" href="#contact-section">Контакти</a></li>
       </ul>
     </nav>
 
     <address>
       <ul>
-        <li><a href="tel:+ 380960000007">+ 38 (096) 000 00 07</a></li>
+        <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
         <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
         <li><a href="https://maps.app.goo.gl/bQb32PcYhCSCMm9C8" target="_blank">Україна, м. Київ,
         вул. Січових Стрільців 54</a></li>
