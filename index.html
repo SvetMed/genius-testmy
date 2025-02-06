@@ -9,7 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./scss/main.css">
 
  
 </head>
@@ -141,6 +141,8 @@
           <ul class="formats-list">
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image"
+                src="./img/cards/cards1.jpg" alt="card1"/>
           
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
@@ -158,6 +160,7 @@
             </li class="formats-item">
             <li>
               <article class="format-card">
+                <img class="format-image" src="./img/cards/cards2.jpg" alt="card1" />
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -172,6 +175,7 @@
             </li>
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./img/cards/cards3.jpg" alt="card1" />
           
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
@@ -207,30 +211,30 @@
             <h2 class="contact-title section-title">Приєднуйся до
             мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <form name="contact-form" autocomplete="off" novalidate>
+          <form name="contact-form" autocomplete="off" >
           
             <div class="form-field ">
               <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-              <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" />
+              <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required/>
           
           
             </div>
           
             <div class="form-field ">
               <label class="form-label visually-hidden" for="user-tel">Телефон</label>
-              <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" />
+              <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required/>
           
             </div>
           
             <div class="form-field ">
               <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-              <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" />
+              <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта" required/>
           
           
           
             </div>
           
-            <button class="form-button button" type="submit">Замовити дзвінок</button>
+            <button class="form-button button" type="submit" >Замовити дзвінок</button>
             <p class="form-terms">
               Натискаючи на кнопку я погоджуюсь з
               <a class="form-terms-link" href="#">політикою конфіденційності</a>
@@ -318,7 +322,7 @@
       </button>
       <h2>Замовити дзвінок</h2>
       <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-      <form name="modal-form" autocomplete="off" novalidate>
+      <form name="modal-form" autocomplete="off" >
 
         <div class="form-field ">
           <label class="form-label visually-hidden" for="user-name">Ім'я</label>
@@ -328,7 +332,9 @@
             id="user-name" 
             name="user-name"
             placeholder="Ім'я"
-            
+            minlength="2"
+            maxlength="20"
+            required
             />
           
 
@@ -342,7 +348,7 @@
             id="user-tel" 
             name="user-tel"
             placeholder="Телефон"
-            
+            required
             />
           
         </div>
@@ -355,14 +361,14 @@
             id="user-email" 
             name="user-email"
             placeholder="Електронна пошта"
-            
+            required
             />
             
 
         
         </div>
         
-        <button class="form-button button" type="submit">Замовити дзвінок</button>
+        <button class="form-button button" type="submit" >Замовити дзвінок</button>
         <p class="form-terms">
           Натискаючи на кнопку я погоджуюсь з 
           <a class="form-terms-link" href="#">політикою конфіденційності</a></p>

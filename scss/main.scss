@@ -1,0 +1,60 @@
+@import './utils/variables.scss';
+
+@import './based';
+
+@import './utils/utils.scss';
+
+@import './components/buttons';
+
+
+@import './components/links';
+
+
+@import './utils/mixins';
+
+// .circle{
+//   @include circle (200px,200px, green  );
+
+// }
+
+/* Header */
+
+@import './components/header.scss';
+
+
+
+
+/* Hero section */
+
+@import './components/hero-section';
+/* Advantages section */
+
+@import './components/adventages-section';
+/* Traditions section */
+
+@import './components/trafition-section';
+
+/* chefs section */
+
+@import './components/chefs-section';
+
+/* Formats section */
+
+@import './components/format-section';
+
+
+@import './components/carousel-button';
+
+/* Contact section */
+
+@import './components/contact-section';
+/* Footer */
+
+@import './components/footer';
+
+/* Modal */
+
+@import './components/modal.scss';
+/* Form */
+
+@import './components/form.scss'; 

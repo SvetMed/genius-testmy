@@ -1,0 +1,21 @@
+.button {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 16px 32px;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+/* .button[disabled]{
+  color: gray;
+  background-color: lightgray;
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
