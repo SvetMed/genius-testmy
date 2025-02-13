@@ -1,38 +1,23 @@
 .traditions-section {
   padding-top: 96px;
+
+
+
+  &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+  
+    &__content {
+      max-width: 710px;
+    }
+  
+    &__title {
+      margin-bottom: 42px;
+  
+    }
 }
 
-.traditions-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
 
-.traditions-content {
-  max-width: 710px;
-}
 
-.tradition-title {
-  margin-bottom: 42px;
-
-}
-
-.traditions-text .brand {
-  color: var(--color-brand-light);
-  font-weight: 400;
-}
-
-.traditions-text .uppercase {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.limited {
-  max-width: 340px;
-}
-
-.advantages-item {
-  font-size: 20px;
-  font-weight: 300;
-
-}

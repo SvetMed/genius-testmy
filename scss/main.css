@@ -23,6 +23,20 @@ ul {
   padding: 48px 0;
 }
 
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+
 .container {
   width: 100%;
   max-width: 1288px;
@@ -53,6 +67,10 @@ h6 {
   margin-top: 0;
 }
 
+.limited {
+  max-width: 340px;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -60,6 +78,18 @@ h6 {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.text-brand {
+  color: var(--color-brand-light);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .button {
@@ -102,25 +132,40 @@ h6 {
   width: 100%;
   padding-top: 32px;
 }
-
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
 }
-
-.header-menu {
+.header__menu {
   display: flex;
   gap: 64px;
   flex-grow: 1;
   justify-content: center;
+}
+@media screen and (max-width: 1280px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .header__burger {
+    display: block;
+  }
 }
 
 /* Hero section */
@@ -132,16 +177,11 @@ h6 {
   background-position: center top;
   background-size: cover;
 }
-
-.hero-title {
+.hero-section__title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
-}
-
-.hero-title .accent {
-  color: var(--color-brand-light);
 }
 
 /* Advantages section */
@@ -149,79 +189,42 @@ h6 {
   padding: 16px 0;
   background-color: var(--color-brand-light);
 }
-
-.advantages-list {
+.advantages-section__list {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-
-.advantages-item {
+.advantages-section__item {
   color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
-}
-
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3;
-}
-
-.section-title.centered {
-  text-align: center;
-}
-
-.section-title .accent {
-  color: var(--color-brand-dark);
 }
 
 /* Traditions section */
 .traditions-section {
   padding-top: 96px;
 }
-
-.traditions-container {
+.traditions-section__container {
   display: flex;
   justify-content: space-between;
   gap: 40px;
 }
-
-.traditions-content {
+.traditions-section__content {
   max-width: 710px;
 }
-
-.tradition-title {
+.traditions-section__title {
   margin-bottom: 42px;
 }
 
-.traditions-text .brand {
-  color: var(--color-brand-light);
-  font-weight: 400;
-}
-
-.traditions-text .uppercase {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.limited {
-  max-width: 340px;
-}
-
-.advantages-item {
-  font-size: 20px;
-  font-weight: 300;
-}
-
 /* chefs section */
-.chefs-title {
+.chefs-section {
+  padding: 0;
+}
+.chefs-section__title {
   position: relative;
   margin: 0 auto 80px;
 }
-
-.chefs-title::before,
-.chefs-title::after {
+.chefs-section__title::before, .chefs-section__title::after {
   position: absolute;
   bottom: 24px;
   display: block;
@@ -229,31 +232,25 @@ h6 {
   border: 2px solid var(--color-brand-normal);
   content: "";
 }
-
-.chefs-title::before {
+.chefs-section__title::before {
   left: 0;
 }
-
-.chefs-title::after {
+.chefs-section__title::after {
   right: 0;
 }
-
-.chef-title {
+.chefs-section__title {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-
-.chefs-list {
+.chefs-section__list {
   display: flex;
   gap: 30px;
 }
-
-.chefs-item {
+.chefs-section__item {
   flex-basis: calc((100% - 30px) / 2);
 }
-
-.chefs-card {
+.chefs-section__card {
   display: flex;
   gap: 30px;
 }
